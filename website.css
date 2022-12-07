@@ -1,0 +1,53 @@
+.container {
+    padding: 5%;
+}
+
+.navbar{
+    padding: 1%;
+}
+
+.cover {
+    background: #bcdfbc;
+    text-align: center;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
+    width: 95%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+}
+
+.deliverableBtn {
+    width: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 4vw;
+    background-color: #E0607E;
+    height: 15vw;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.deliverableBtn a{
+    text-decoration: none;
+    color: white;
+}
+  
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
