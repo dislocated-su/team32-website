@@ -38,7 +38,6 @@
     border: none;
     cursor: pointer;
     font-size: 2vw;
-    text-align: center;
 }
 
 .deliverableBtn a{
@@ -50,5 +49,33 @@
     float: left;
     width: 33.33%;
     padding: 10px;
+}
+
+.downloadBtn {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 2px;
+    background-color: #E0607E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5%;
+}
+
+.downloadBtn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.downloadBtn:hover {
+    background-color: #cf5571;
+}
+
+.downloadBtn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
