@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="website.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">ENG1 Team 32</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="deliverables.html">Deliverables</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownImp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Implementation
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://github.com/eng1-32/piazza-panic">Repository</a></li>
+                    <li><a class="dropdown-item" href="piazza-docs/index.html">JavaDoc</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownArch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Architecture
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="jamboard.html">RDD Jamboard</a></li>
+                    <li><a class="dropdown-item" href="crcCards.html">CRC Cards</a></li>
+                    <li><a class="dropdown-item" href="classDiagrams.html">Class Diagrams</a></li>
+                    <li><a class="dropdown-item" href="behaviouralDiagrams.html">Behavioural Diagrams</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMeth" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Method and Planning
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ganttChart.html">Gantt Charts</a></li>
+                    <li><a class="dropdown-item" href="#">Work Break down</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bibliography.html">Bibliography</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="cover">
+        <h2>CRC Cards</h2>
+        <div class="crcCard">
+            <h3>Chef</h3>
+            <p>An entity that is controlled by the player and is used to interact with the game.
+                The player can switch between them at any time.
+                Used to pick up ingredients and cook food at their respective stations, then deliver the food to the customer.
+                Can carry multiple ingredients at a time and bin unnecessary items.
+                <br>
+                Stereotypes: Information holder, Controller & Service provider
+                <br>
+                Collaborators: Customer, Ingredient, Cooking station, Serving station, Bin Station, IngredientStack, Cutting station, Cooking station, Baking Station, KitchenCounter, Ingredient Station, Serving Station
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Customer</h3>
+            <p>Represents the food requests the chef has to make.<br>
+                This object appears a set number of times throughout the game.<br>
+                Will react positively or negatively to presented food.<br>
+                The game is completed once all customers have received the correct food object.<br>
+                Stereotypes: Information holder & Coordinator<br>
+                Collaborators: Chef, Plate, GameState
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>GameState</h3>
+            <p>Knows if enough customers have been served<br>
+                Knows how many customers have been served<br>
+                Can tell how much time has elapsed<br>
+                Can answer if the round has come to an end<br>
+                Stereotypes: Information holder<br>
+                Collaborators: Result Screen, Customer
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Ingredient Stack</h3>
+            <p>Represents a stack of ingredients that can be carried around by a Chef<br>
+                Ingredients can be added or removed from the top onto a station/table<br>
+                Limited in the number of ingredients it supports<br>
+                Stereotypes: Information holder/Structurer <br>
+                Collaborators: Ingredient, Chef, Cooking station, Serving station, Bin Station, Cutting station, Cooking station, Baking Station, KitchenCounter, Ingredient Station
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Ingredient</h3>
+            <p>Represents the ingredient that can be processed to be used in a recipe<br>
+                Keeps track of the current state that it is in (e.g. raw, chopped, cooked, etc)<br>
+                Based on its current state, it has possible actions that can be carried out on a cooking station<br>
+                Can be on an ingredient stack, or if it is cooked, it can be on a plate<br>
+                Stereotypes: Information holder<br>
+                Collaborators: Recipe, Cooking station, plate, ingredient stack.
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Plate</h3>
+            <p>Has a stack of cooked ingredients that can be part of a recipe<br>
+                When given to a customer, the cooked ingredients are compared to the recipe requested<br>
+                Stereotypes: Information holder<br>
+                Collaborators: Ingredient, Customer
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Recipe</h3>
+            <p>Contains a list of ingredients that are needed to complete the recipe<br>
+                Can check to see if a plate contains the required ingredients<br>
+                Stereotypes: Information holder, Structurer<br>
+                Collaborators: Ingredient, Plate
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Bin Station</h3>
+            <p>Know if the chef wants to bin the plate or the ingredient stack<br>
+                If ingredient stack, empty the ingredient stack<br>
+                If plate, empty the plate<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: Chef, IngredientStack, Plate
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Cutting Station</h3>
+            <p>Takes the top ingredient from the ingredient stack<br>
+                Cut the ingredient in specified time<br>
+                Know the chef at the station<br>
+                Allow the chef to pick up the cut ingredient<br>
+                Know the ingredient at the station<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: IngredientStack, Ingredient, Chef
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Serving Station</h3>
+            <p>Know the customer order<br>
+                Compares the customer order and the want is on the plate<br>
+                Know if the plate and the customer order match<br>
+                If they match, new customer approaches<br>
+                If they don’t match, time is added to the clock and customer stays until match<br>
+                Knows the chef at the cooking station<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: Customer, Plate, GameState, Chef
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Ingredient Station</h3>
+            <p>Allow the chef to pick up an ingredient to add to the top of the stack<br>
+                Know all the ingredients<br>
+                Knows the chef at the station<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: Chef, Ingredient, IngredientStack
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Kitchen Counter</h3>
+            <p>Empty ingredient stack onto the table<br>
+                Know the ingredients on the table<br>
+                Allow the chef to pick up top ingredient of the stack<br>
+                Allow the chef to pick up the entire stack of ingredients<br>
+                Know the chef at the station<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: IngredientStack, Ingredient, Chef
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Cooking Station</h3>
+            <p>Take the first ingredient from the stack<br>
+                Know the ingredient at the station<br>
+                Cook the ingredient in a specified time<br>
+                Know the chef that is using the station<br>
+                Allow the chef to pick in ingredient and add it to the top of the ingredient stack<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: Chef, IngredientStack, Ingredient
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Baking Station</h3>
+            <p>
+                Take the top ingredient from the stack<br>
+                Know the ingredient at the station <br>
+                Bake the ingredient for a specified time<br>
+                Know the chef that is using the station<br>
+                Allow the chef to pick up the baked ingredient<br>
+                Stereotypes: Information Holder, Service provider<br>
+                Collaborators: IngredientStack, Ingredient, Chef
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Start Menu Screen</h3>
+            <p>Menu to either:
+                <ul>
+                    <li>Start a new game</li>
+                    <li>Go into the settings menu</li>
+                    <li>Go through a tutorial</li>
+                </ul>
+                Stereotype: Interfacer<br>
+                Collaborators: GameState
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Gameplay Screen</h3>
+            <p>Screen where the actual game takes place with:
+            <ul>
+                <li>Customers entering the building and ordering food</li>
+                <li>Chefs preparing and cooking dishes for them, with stations for each stage of the recipe and a bin in case anything goes wrong</li>
+            </ul>
+            Stereotypes: Controller<br>
+            Collaborators: GameState, Chef, Customer, Each station*, ingredient, plate
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Tutorial Screen</h3>
+            <p>Screen where a user is given instructions:
+            <ul>
+                <li>On what the goal of the game is</li>
+                <li>How the user can control the chefs in the kitchen</li>
+            </ul>
+            Stereotype: Interfacer<br>
+            Collaborators: GameState
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Settings Screen</h3>
+            <p>Screen with:
+            <ul>
+                <li>Mute/unmute buttons</li>
+                <li>Ability to make game either full screen or smaller</li>
+            </ul>
+            Stereotype: Interfacer, Controller <br>
+            Collaborators:  Gameplay Screen
+            </p>
+        </div>
+        <div class="crcCard">
+            <h3>Result Screen</h3>
+            <p>Screen to show:
+            <ul>
+                <li>A congratulatory message</li>
+                <li>How long the user took to complete the game</li>
+                <li>Option to try again or go back to the start menu screen</li>
+            </ul>
+            Stereotype: Interfacer<br>
+            Collaborators: GameState
+
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>
