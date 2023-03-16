@@ -1,0 +1,28 @@
+- name: Deliverables
+  link: /#
+  dropdown:
+    - name: Team 32 (Assesment 1)
+      link: /#
+    - name: Team 26 (Assesment 2)
+      link: /#
+- name: Architecture
+  link: /#
+  dropdown:
+    - name: Class Diagrams
+      link: /diagrams/class.html
+    - name: Behavioural Diagrams
+      link: /diagrams/behaviour.html
+- name: Method & Planning
+  link: /#
+  dropdown:
+    - name: Gantt Charts
+      link: /gantt.html
+- name: More
+  link: /#
+  dropdown:
+    - name: Javadoc
+      link: /javadoc/index.html
+    - name: Bibliography
+      link: /bibliography.html
+    - name: Licenses
+      link: /licenses.html
