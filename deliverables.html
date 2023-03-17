@@ -1,0 +1,55 @@
+---
+layout: wrapper
+---
+<br>
+<section class="section is-centered">
+    
+    <div class="box has-text-centered">
+        <div class="title">legacy deliverables</div>
+        <p class="block">Team 32's original website includes their deliverables and any extra material</p>
+        <div class="block">
+            <button class="button is-link is-light">team 32 website</button>
+        </div>
+    </div>
+
+</section>
+<section class="section">
+    <div class="title has-text-centered">
+        updated assessment 1 deliverables
+    </div>
+    {% for group in site.data.deliverables-1 %}
+
+    <div class="columns is-centered">
+        {% for deliverable in group.items %}
+        <div class="column">
+            <button class="button is-large is-fullwidth">
+                <span>
+                    {{ deliverable.name }}
+                </span>
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+
+<section class="section">
+    <div class="title has-text-centered">
+        assessment 2 deliverables
+    </div>
+
+    {% for group in site.data.deliverables-2 %}
+
+    <div class="columns is-centered">
+        {% for deliverable in group.items %}
+        <div class="column">
+            <button class="button is-large is-fullwidth">
+                <span>
+                    {{ deliverable.name }}
+                </span>
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>

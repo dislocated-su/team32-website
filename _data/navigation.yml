@@ -1,10 +1,5 @@
 - name: Deliverables
-  link: /#
-  dropdown:
-    - name: Team 32 (Assesment 1)
-      link: /#
-    - name: Team 26 (Assesment 2)
-      link: /#
+  link: /deliverables.html
 - name: Architecture
   link: /#
   dropdown:
@@ -22,7 +17,5 @@
   dropdown:
     - name: Javadoc
       link: /javadoc/index.html
-    - name: Bibliography
-      link: /bibliography.html
     - name: Licenses
       link: /licenses.html
