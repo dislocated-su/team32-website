@@ -1,0 +1,25 @@
+---
+layout: wrapper
+
+gantts:
+- img: 1.png
+  desc: Example chart blah
+- img: 2.png
+  desc: Example chart 2 Blah blah
+---
+
+
+
+{% for chart in page.gantts %}
+<div class="section">
+  <div class="box">
+    <div class="has-text-centered">
+      <h1 class="title">Week {{ forloop.index }}</h1>
+      <img src="assets/images/gantt/{{chart.img}}" alt="Week {{ forloop.index }} gantt chart">
+    </div>
+    <div class="section">
+      <p class="content">{{ chart.desc }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}

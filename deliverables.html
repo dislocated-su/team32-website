@@ -8,7 +8,7 @@ layout: wrapper
         <div class="title">legacy deliverables</div>
         <p class="block">Team 32's original website includes their deliverables and any extra material</p>
         <div class="block">
-            <button class="button is-link is-light">team 32 website</button>
+            <a class="button is-link is-light" href="https://eng1-32.github.io/">team 32 website</a>
         </div>
     </div>
 
@@ -22,11 +22,11 @@ layout: wrapper
     <div class="columns is-centered">
         {% for deliverable in group.items %}
         <div class="column">
-            <button class="button is-large is-fullwidth">
+            <a class="button is-large is-fullwidth" href="{{ deliverable.link }}">
                 <span>
                     {{ deliverable.name }}
                 </span>
-            </button>
+            </a>
         </div>
         {% endfor %}
     </div>
@@ -43,11 +43,11 @@ layout: wrapper
     <div class="columns is-centered">
         {% for deliverable in group.items %}
         <div class="column">
-            <button class="button is-large is-fullwidth">
+            <a class="button is-large is-fullwidth" href="{{ deliverable.link }}">
                 <span>
                     {{ deliverable.name }}
                 </span>
-            </button>
+            </a>
         </div>
         {% endfor %}
     </div>
