@@ -1,18 +1,18 @@
-- name: Deliverables
+- name: deliverables
   link: /deliverables.html
-- name: Architecture
+- name: architecture
   link: /#
   dropdown:
     - name: Class Diagrams
       link: /diagrams/class.html
     - name: Behavioural Diagrams
       link: /diagrams/behaviour.html
-- name: Method & Planning
+- name: method & planning
   link: /#
   dropdown:
     - name: Weekly Plans
       link: /gantt.html
-- name: More
+- name: more
   link: /#
   dropdown:
     - name: Javadoc
