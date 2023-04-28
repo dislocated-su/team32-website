@@ -1,0 +1,18 @@
+---
+---
+@import "main";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&d');
+
+#hero-title {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.navbar-item .logo {
+    width: auto;
+    height: 60px;
+    max-height: 5rem;
+}

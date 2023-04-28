@@ -1,0 +1,12 @@
+- line: 1
+  items:
+  - name: requirements
+    link: /#
+  - name: risk assesment and mitigation
+- line: 2
+  items:
+  - name: method selection and planning
+    link: /#
+  - name: architecture
+    link: /#
+  - name: implementation

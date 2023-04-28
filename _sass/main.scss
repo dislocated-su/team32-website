@@ -1,0 +1,17 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+// Set your brand colors
+$purple: #6a4d8a;
+$pink: #aa7eb3;
+$brown: #1c1e22;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Inter", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$button-padding-horizontal: 1.1em;
+@import "../bulma/bulma.sass";
