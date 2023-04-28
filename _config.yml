@@ -1,5 +1,5 @@
 title: devCharles
 description: >- # this means to ignore newlines until "baseurl:"
   Piazza Panic is a game created by Team 26 (devCharles) as part of the ENG1 module at the University of York
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "dislocated-su.github.io/devCharles2" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/team32-website" # the subpath of your site, e.g. /blog
+url: "dislocated-su.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
