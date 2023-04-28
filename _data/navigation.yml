@@ -10,7 +10,7 @@
 - name: Method & Planning
   link: /#
   dropdown:
-    - name: Gantt Charts
+    - name: Weekly Plans
       link: /gantt.html
 - name: More
   link: /#
