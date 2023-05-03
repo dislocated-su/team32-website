@@ -22,7 +22,7 @@ layout: wrapper
     <div class="columns is-centered">
         {% for deliverable in group.items %}
         <div class="column">
-            <a class="button is-large is-fullwidth" href="{{ deliverable.link }}">
+            <a class="button is-large is-fullwidth" href="{{ site.baseurl }}{{ deliverable.link }}">
                 <span>
                     {{ deliverable.name }}
                 </span>
@@ -43,7 +43,7 @@ layout: wrapper
     <div class="columns is-centered">
         {% for deliverable in group.items %}
         <div class="column">
-            <a class="button is-large is-fullwidth" href="{{ deliverable.link }}">
+            <a class="button is-large is-fullwidth" href="{{ site.baseurl }}{{ deliverable.link }}">
                 <span>
                     {{ deliverable.name }}
                 </span>
