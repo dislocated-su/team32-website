@@ -12,6 +12,8 @@
   dropdown:
     - name: Weekly Plans
       link: /gantt.html
+- name: testing
+  link: /testing.html
 - name: more
   link: /#
   dropdown:
