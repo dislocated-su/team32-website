@@ -1,12 +1,13 @@
 - line: 1
   items:
   - name: requirements
-    link: /#
+    link: /assets/other/Req2.pdf
   - name: risk assesment and mitigation
+    link: /assets/other/Risk2.pdf
 - line: 2
   items:
   - name: method selection and planning
-    link: /#
+    link: /assets/other/Plan2.pdf
   - name: architecture
-    link: /#
+    link: /assets/other/Arch2.pdf
   - name: implementation
